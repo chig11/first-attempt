@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*my laptop 1366x768*/
+
+body, html {
+	background-color: white;
+	width: 1291px;
+	height: 750px;
+	/*box-sizing: border-box;
+	border: 1px dashed black;*/
+}
+
+/*PANG VISITOR*/
+/*Default in visitor UI*/
+.max-width {  /*pang resize ng image sa homepage*/
+	width: 1291px;
+}
+
+#header-bar{  /*The thick, dark yellow bar at the top*/
+	position: absolute;
+	background-color: #FFEE58;
+	height: 52px;
+	width: 1291px;
+
+	box-sizing: border-box;
+	z-index: 1;
+	border-top: 2px solid grey;
+	/*border: 1px solid grey;*/
+	display: flex;
+}
+
+#top-logo { /*UP CMO logo located upper right*/
+	position: absolute;
+	left: 10px;
+}
+
+#top-caption { /*"UP Campus Ministry Office"*/
+	position: absolute;
+	top: 19px;
+	left: 104px;
+	color: #00B0FF;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 22px;	
+	z-index: 2;
+}
+
+#volunteer-button{ /*"Be A Volunteer"; upper right corner*/
+	background-color: #1DE9B6;
+	position: absolute;
+	top: 10px;
+	left: 1150px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 2;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+#volunteer-button:hover { /*cursor becomes a hand*/
+	cursor: pointer;
+
+}
+
+#nav-menu{ /*thin, light yellow bar; contains navigation items*/
+	position: absolute;
+	background-color: #FFFF8D;
+	height: 25px;
+	top: 52px;
+	box-sizing: border-box;
+	width: 1291px;
+	border-top: 1px solid grey;
+	border-bottom:  1px solid grey;
+	display: flex;
+	/*border: 1px solid grey;*/
+}
+
+dl{	/*lalagyan ng navigation items*/
+	position: absolute;
+	left: 90px;
+}
+dt { /*navigation items (e.g. About Us, Contact Us...)*/
+	display: inline;
+	font-family: Arial;
+	position: relative;
+	padding-left: 15px;
+	top: 4px;
+}
+
+.inline {
+	display: inline;
+}
+
+dt:hover{ 
+	color: #DBE9EE;
+}
+
+
+a.nav-item:link {
+	text-decoration: none;
+	color: grey;
+}
+
+a.nav-item:visited  { 
+	text-decoration: none;
+	color: grey;
+}
+
+.main-content { /*box; laman per page*/
+	position: absolute;
+	display: flex;
+	top: 77px;
+	width: 1291px;
+	height: 700px;
+	/*box-sizing: border-box;
+	border: 3px solid maroon;*/
+}
+/*End default in visitor UI*/
+
+/*Announcement page*/
+/*End Announcement page*/
+
+/*Event gallery page*/
+#side-bar {
+	position: relative;
+	width: 320px;
+	height: 100%;
+	border-right: 1px solid black;
+	box-sizing: border-box;
+}
+/*End Event gallery page*/
+
+/*Volunteers page*/
+/*End Volunteers page*/
+
+/*Contact us page*/
+#map-contents {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#socmed-contentC {
+	position: absolute;
+	top: 550px;
+	left: 100px;
+	width: 200px;
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#socmed-linksC {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#message-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: absolute;
+	top: 40px;
+	left: 722px;
+	height: 400px;
+	width: 470px;
+	/*border: 1px solid black;*/
+}
+
+#message {
+	width: 450px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+.field {
+	width: 450px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+#send-button {
+	width: 100px;
+	padding: 5px;
+	background-color: #7CC576;
+	color: black;
+	border: 2px solid black;
+  	border-bottom: 2px solid black;
+	box-sizing: border-box;
+  	box-shadow: inset 0 -2px black;
+}
+#send-button:hover {
+	cursor: pointer;
+}
+#send-button:active {
+  outline: none;
+  box-shadow: none;
+}
+#cancel-button {
+	width: 100px;
+	padding: 5px;
+	background-color: crimson;
+	color: black;
+	border: 2px solid black;
+  	border-bottom: 2px solid black;
+	box-sizing: border-box;
+  	box-shadow: inset 0 -2px black;
+}
+#cancel-button:hover {
+	cursor: pointer;
+}
+#cancel-button:active {
+  outline: none;
+  box-shadow: none;
+}
+/*End Contact us page*/
+/*END PANG VISITOR*/
+
+
+/*PANG MEMBER*/
+/*General: Member page sidebar and signout; */
+
+#profile-box {
+	position: relative;
+	width: 320px;
+	height: 100%;
+	border-right: 1px solid black;
+	box-sizing: border-box;
+}
+
+#profile-photo {
+	position: relative;
+	left: 93px;
+	top: 50px;
+}
+
+#right-contents {
+	position: relative;
+	width: 967px;
+	height: 100%;	
+	border-right: 1px solid black; 
+	box-sizing: border-box;
+
+}
+
+#profile-nav-bar {
+	position: relative;
+	width: 250px;
+	height: 500px;
+	left: 34px;
+	top: 75px;
+	border-top: 3px solid black;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a.profile-menu-item {
+	margin: 20px 0;
+
+}
+a.profile-menu-item:link {
+	text-decoration: none;
+	color: grey;
+}
+
+
+a.profile-menu-item:visited  {
+	text-decoration: none;
+	color: grey;
+}
+
+
+a.profile-menu-item:hover { /*declare hover after link and visited*/
+	text-decoration: none;
+	color: black;
+}
+
+#sign-out-button:hover {
+	cursor: pointer;
+}
+
+#sign-out-button{
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 1150px;
+	width: 100px; 
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 2;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+/*End General: Member page sidebar and signout; */
+
+/*Add link*/
+#add-link-box {
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	top: 50px;
+	left: 50px;
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#add-link-buttons-box {
+	position: absolute;
+	top: 550px;
+	left: 50px;
+	width: 250px;
+	/*border: 1px solid black;*/
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+/*End Add link*/
+/*View storage*/
+#search-and-add-box {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 850px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+  /*border: 1px solid black;
+  box-sizing: border-box;*/
+  align-items: center;
+}
+
+.margin-adjust-right {
+	margin-right: 10px;
+}
+
+#add-link-button {
+	position: relative;
+	left: 180px;
+	width: 100px;
+	padding: 5px;
+	background-color: #7CC576;
+	color: black;
+	border: 2px solid black;
+  	border-bottom: 2px solid black;
+	box-sizing: border-box;
+  	box-shadow: inset 0 -2px black;
+}
+
+#add-link-button:hover {
+	cursor: pointer;
+}
+#add-link-button:active {
+  	outline: none;
+ 	box-shadow: none;
+}
+#search-link-button {
+	position: relative;
+	width: 100px;
+	padding: 5px;
+	background-color: aqua;
+	color: black;
+	border: 2px solid black;
+  	border-bottom: 2px solid black;
+	box-sizing: border-box;
+  	box-shadow: inset 0 -2px black;
+}
+
+#search-link-button:hover {
+	cursor: pointer;
+}
+#search-link-button:active {
+  	outline: none;
+ 	box-shadow: none;
+}
+/*EndView storage*/
+
+/*END PANG MEMBER*/
+
+
+
+/*PANG ADMIN*/
+/*END PANG ADMIN*/
